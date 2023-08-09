@@ -18,7 +18,7 @@ function showCountry(data) {
     const {flag, name, population, region, capital} = data
     const country = document.createElement('a');
     country.classList.add('country');
-    country.href = `/country.html?name=${name}`
+    country.href = `/country.html?name=${name.toLowerCase()}`
     country.innerHTML = `
     <div class="country-img">
         <img src=${flag} alt="">
